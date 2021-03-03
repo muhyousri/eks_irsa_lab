@@ -45,3 +45,11 @@ spec:
       defaultMode: 420
       secretName: iamserviceaccount-token-4wz6c
 
+
+
+
+kubectl exec -it testirsa -- bash                                                                                                                               
+bash-4.2# cat /var/run/secrets/eks.amazonaws.com/serviceaccount/token
+eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJkZWZhdWx0Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZWNyZXQubmFtZSI6ImlhbXNlcnZpY2VhY2NvdW50LXRva2VuLTR3ejZjIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6ImlhbXNlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQudWlkIjoiYzRkY2NkYjctMjBmOC00ODAxLWI3YzAtZGU1OWZmMDUzMDc1Iiwic3ViIjoic3lzdGVtOnNlcnZpY2VhY2NvdW50OmRlZmF1bHQ6aWFtc2VydmljZWFjY291bnQifQjfj15y4DMbEkw60m0uMDYU9abm7wSXX8MzMKaJkSI5Jqke7vj8gtUSFZoCD4SUx5SURkvi44-hQlkzdbtNSdpPauU8bun2HabqH697XjAU2-A8lO22YTqytAcOvP0rdvmN6HLna2ZmgK8tCi0OsPkCDU2czcOo9mTOkgrcgBJaARNNzuRicJFrwozuJM6umDX1tRlEFxWe_5YrxqL6VzV_J9sDQdlBXJImfCYA6S7pOxhoYzj3Y7Hr7DcKggeKkVIwIouRbVAZi96M2BdN7Y6q7IX1qJHS2z6mihLxkAADjXuqPRYHRT6lF8t1vt-N7aTW-_9zjKhOMOid1zqZoK4Q
+
+
