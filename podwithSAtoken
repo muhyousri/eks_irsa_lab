@@ -24,6 +24,11 @@ spec:
       name: iamserviceaccount-token-4wz6c
       readOnly: true
   dnsPolicy: ClusterFirst
+  volumes:
+  - name: iamserviceaccount-token-4wz6c
+    secret:
+      defaultMode: 420
+      secretName: iamserviceaccount-token-4wz6c
 
 
 
