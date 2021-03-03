@@ -13,6 +13,11 @@ spec:
   - command:
     - sleep
     - "3600"
+    env:
+    - name: AWS_ROLE_ARN
+      value: arn:aws:iam::833617485655:role/AlbIngressRole
+    - name: AWS_WEB_IDENTITY_TOKEN_FILE
+      value: /var/run/secrets/eks.amazonaws.com/serviceaccount/token
     image: amazon/aws-cli
     imagePullPolicy: Always
     name: testirsa
@@ -35,4 +40,8 @@ spec:
           audience: sts.amazonaws.com
           expirationSeconds: 86400
           path: token
+  - name: iamserviceaccount-token-4wz6c
+    secret:
+      defaultMode: 420
+      secretName: iamserviceaccount-token-4wz6c
 
