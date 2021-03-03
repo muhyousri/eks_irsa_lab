@@ -33,6 +33,9 @@ spec:
 
 
 
+
+
+
   --------------
 
 kubectl exec -it testirsa -- bash                                                                                                                               
