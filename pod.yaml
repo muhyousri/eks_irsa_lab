@@ -1,4 +1,12 @@
 apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: iamserviceaccount
+
+
+
+---
+apiVersion: v1
 kind: Pod
 metadata:
   name: testirsa
@@ -10,10 +18,5 @@ spec:
     command: [ 'sleep' , '3600' ]
     resources: {}
 
----
-apiVersion: v1
-kind: ServiceAccount
-metadata:
-  name: iamserviceaccount
 
     
