@@ -1,3 +1,5 @@
+kubectl get pod testirsa -o yaml
+
 apiVersion: v1
 kind: Pod
 metadata:
